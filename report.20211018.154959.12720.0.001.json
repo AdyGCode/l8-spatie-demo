@@ -1,0 +1,458 @@
+
+{
+  "header": {
+    "reportVersion": 1,
+    "event": "Allocation failed - JavaScript heap out of memory",
+    "trigger": "FatalError",
+    "filename": "report.20211018.154959.12720.0.001.json",
+    "dumpEventTime": "2021-10-18T15:49:59Z",
+    "dumpEventTimeStamp": "1634543399184",
+    "processId": 12720,
+    "cwd": "C:\\Users\\5001775\\source\\repos\\l8-spatie-demo",
+    "commandLine": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Users\\5001775\\source\\repos\\JetBrains\\apps\\PhpStorm\\ch-0\\212.5457.49\\plugins\\tailwindcss\\server\\tailwindServer.js"
+    ],
+    "nodejsVersion": "v12.13.1",
+    "wordSize": 64,
+    "arch": "x64",
+    "platform": "win32",
+    "componentVersions": {
+      "node": "12.13.1",
+      "v8": "7.7.299.13-node.16",
+      "uv": "1.33.1",
+      "zlib": "1.2.11",
+      "brotli": "1.0.7",
+      "ares": "1.15.0",
+      "modules": "72",
+      "nghttp2": "1.39.2",
+      "napi": "5",
+      "llhttp": "1.1.4",
+      "http_parser": "2.8.0",
+      "openssl": "1.1.1d",
+      "cldr": "35.1",
+      "icu": "64.2",
+      "tz": "2019c",
+      "unicode": "12.1"
+    },
+    "release": {
+      "name": "node",
+      "lts": "Erbium",
+      "headersUrl": "https://nodejs.org/download/release/v12.13.1/node-v12.13.1-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v12.13.1/node-v12.13.1.tar.gz",
+      "libUrl": "https://nodejs.org/download/release/v12.13.1/win-x64/node.lib"
+    },
+    "osName": "Windows_NT",
+    "osRelease": "10.0.17763",
+    "osVersion": "Windows 10 Enterprise",
+    "osMachine": "x86_64",
+    "cpus": [
+      {
+        "model": "Intel(R) Core(TM) i5-9500F CPU @ 3.00GHz",
+        "speed": 3000,
+        "user": 569062,
+        "nice": 0,
+        "sys": 530984,
+        "idle": 3555859,
+        "irq": 32000
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-9500F CPU @ 3.00GHz",
+        "speed": 3000,
+        "user": 506281,
+        "nice": 0,
+        "sys": 221750,
+        "idle": 3927875,
+        "irq": 2906
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-9500F CPU @ 3.00GHz",
+        "speed": 3000,
+        "user": 830281,
+        "nice": 0,
+        "sys": 223812,
+        "idle": 3601640,
+        "irq": 2328
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-9500F CPU @ 3.00GHz",
+        "speed": 3000,
+        "user": 410406,
+        "nice": 0,
+        "sys": 178875,
+        "idle": 4066453,
+        "irq": 2906
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-9500F CPU @ 3.00GHz",
+        "speed": 3000,
+        "user": 584750,
+        "nice": 0,
+        "sys": 293718,
+        "idle": 3777265,
+        "irq": 2765
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-9500F CPU @ 3.00GHz",
+        "speed": 3000,
+        "user": 484796,
+        "nice": 0,
+        "sys": 186515,
+        "idle": 3984421,
+        "irq": 2015
+      }
+    ],
+    "networkInterfaces": [
+      {
+        "name": "Ethernet",
+        "internal": false,
+        "mac": "b4:2e:99:3b:31:c3",
+        "address": "fe80::d8fc:7753:2ba8:545f",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 18
+      },
+      {
+        "name": "Ethernet",
+        "internal": false,
+        "mac": "b4:2e:99:3b:31:c3",
+        "address": "10.163.80.228",
+        "netmask": "255.255.248.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "VirtualBox Host-Only Network",
+        "internal": false,
+        "mac": "0a:00:27:00:00:04",
+        "address": "fe80::c137:512f:4a14:6ff",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 4
+      },
+      {
+        "name": "VirtualBox Host-Only Network",
+        "internal": false,
+        "mac": "0a:00:27:00:00:04",
+        "address": "192.168.56.1",
+        "netmask": "255.255.255.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "VMware Network Adapter VMnet1",
+        "internal": false,
+        "mac": "00:50:56:c0:00:01",
+        "address": "fe80::577:6453:85cf:a29f",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 14
+      },
+      {
+        "name": "VMware Network Adapter VMnet1",
+        "internal": false,
+        "mac": "00:50:56:c0:00:01",
+        "address": "192.168.139.1",
+        "netmask": "255.255.255.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "VMware Network Adapter VMnet8",
+        "internal": false,
+        "mac": "00:50:56:c0:00:08",
+        "address": "fe80::f8f1:bacd:8571:908d",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 6
+      },
+      {
+        "name": "VMware Network Adapter VMnet8",
+        "internal": false,
+        "mac": "00:50:56:c0:00:08",
+        "address": "192.168.190.1",
+        "netmask": "255.255.255.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "Loopback Pseudo-Interface 1",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "::1",
+        "netmask": "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff",
+        "family": "IPv6",
+        "scopeid": 0
+      },
+      {
+        "name": "Loopback Pseudo-Interface 1",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "127.0.0.1",
+        "netmask": "255.0.0.0",
+        "family": "IPv4"
+      }
+    ],
+    "host": "NMT-179515"
+  },
+  "javascriptStack": {
+    "message": "No stack.",
+    "stack": [
+      "Unavailable."
+    ]
+  },
+  "nativeStack": [
+    {
+      "pc": "0x00007ff7a9221729",
+      "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+10873"
+    },
+    {
+      "pc": "0x00007ff7a9225b4c",
+      "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+28316"
+    },
+    {
+      "pc": "0x00007ff7a9224b08",
+      "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+24152"
+    },
+    {
+      "pc": "0x00007ff7a931369b",
+      "symbol": "v8::base::CPU::has_sse+37723"
+    },
+    {
+      "pc": "0x00007ff7a9b182de",
+      "symbol": "v8::Isolate::ReportExternalAllocationLimitReached+94"
+    },
+    {
+      "pc": "0x00007ff7a9b00321",
+      "symbol": "v8::SharedArrayBuffer::Externalize+833"
+    },
+    {
+      "pc": "0x00007ff7a99cdbec",
+      "symbol": "v8::internal::Heap::EphemeronKeyWriteBarrierFromCode+1436"
+    },
+    {
+      "pc": "0x00007ff7a99d8f90",
+      "symbol": "v8::internal::Heap::ProtectUnprotectedMemoryChunks+1312"
+    },
+    {
+      "pc": "0x00007ff7a99d5ac4",
+      "symbol": "v8::internal::Heap::PageFlagsAreConsistent+3204"
+    },
+    {
+      "pc": "0x00007ff7a99cb353",
+      "symbol": "v8::internal::Heap::CollectGarbage+1283"
+    },
+    {
+      "pc": "0x00007ff7a99c9b24",
+      "symbol": "v8::internal::Heap::AddRetainedMap+2356"
+    },
+    {
+      "pc": "0x00007ff7a99f19b3",
+      "symbol": "v8::internal::Factory::NewRawOneByteString+83"
+    },
+    {
+      "pc": "0x00007ff7a9818cda",
+      "symbol": "v8::internal::String::SlowFlatten+442"
+    },
+    {
+      "pc": "0x00007ff7a96e1cef",
+      "symbol": "unibrow::Utf8::EncodeOneByte+687"
+    },
+    {
+      "pc": "0x00007ff7a971b2af",
+      "symbol": "v8::internal::StubCache::value_reference+7471"
+    },
+    {
+      "pc": "0x00007ff7a9f4404d",
+      "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+567949"
+    },
+    {
+      "pc": "0x000001adf0dbc362",
+      "symbol": ""
+    }
+  ],
+  "javascriptHeap": {
+    "totalMemory": 2181038080,
+    "totalCommittedMemory": 2181038080,
+    "usedMemory": 2088081128,
+    "availableMemory": 47282200,
+    "memoryLimit": 2197815296,
+    "heapSpaces": {
+      "read_only_space": {
+        "memorySize": 262144,
+        "committedMemory": 262144,
+        "capacity": 261872,
+        "used": 32296,
+        "available": 229576
+      },
+      "new_space": {
+        "memorySize": 33554432,
+        "committedMemory": 33554432,
+        "capacity": 16759808,
+        "used": 3301872,
+        "available": 13457936
+      },
+      "old_space": {
+        "memorySize": 2132914176,
+        "committedMemory": 2132914176,
+        "capacity": 2074482648,
+        "used": 2074424984,
+        "available": 57664
+      },
+      "code_space": {
+        "memorySize": 1212416,
+        "committedMemory": 1212416,
+        "capacity": 1007872,
+        "used": 1007872,
+        "available": 0
+      },
+      "map_space": {
+        "memorySize": 4722688,
+        "committedMemory": 4722688,
+        "capacity": 1035520,
+        "used": 1035520,
+        "available": 0
+      },
+      "large_object_space": {
+        "memorySize": 8323072,
+        "committedMemory": 8323072,
+        "capacity": 8275032,
+        "used": 8275032,
+        "available": 0
+      },
+      "code_large_object_space": {
+        "memorySize": 49152,
+        "committedMemory": 49152,
+        "capacity": 3552,
+        "used": 3552,
+        "available": 0
+      },
+      "new_large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 16759808,
+        "used": 0,
+        "available": 16759808
+      }
+    }
+  },
+  "resourceUsage": {
+    "userCpuSeconds": 187.156,
+    "kernelCpuSeconds": 133.89,
+    "cpuConsumptionPercent": 8.14424,
+    "maxRss": 2798170112,
+    "pageFaults": {
+      "IORequired": 1691133,
+      "IONotRequired": 0
+    },
+    "fsActivity": {
+      "reads": 1932,
+      "writes": 666
+    }
+  },
+  "libuv": [
+  ],
+  "environmentVariables": {
+    "=::": "::\\",
+    "AD_COMPUTER": "NMT-179515",
+    "AD_OU_DN": "OU=3-06,OU=Level_3,OU=30_Aberdeen,OU=Northbridge,OU=Non_Portable,OU=Computers,OU=Central,DC=student,DC=central",
+    "AD_OU_HUMAN": "student.central\\Central\\Computers\\Non_Portable\\Northbridge\\30_Aberdeen\\Level_3\\3-06",
+    "AD_OU_LEAF": "3-06",
+    "ALLUSERSPROFILE": "C:\\ProgramData",
+    "APPDATA": "C:\\Users\\5001775\\AppData\\Roaming",
+    "CommonProgramFiles": "C:\\Program Files\\Common Files",
+    "CommonProgramFiles(x86)": "C:\\Program Files (x86)\\Common Files",
+    "CommonProgramW6432": "C:\\Program Files\\Common Files",
+    "COMPUTERNAME": "NMT-179515",
+    "ComSpec": "C:\\WINDOWS\\system32\\cmd.exe",
+    "DriverData": "C:\\Windows\\System32\\Drivers\\DriverData",
+    "HOMEDRIVE": "C:",
+    "HOMEPATH": "\\Users\\5001775",
+    "https_proxy": "http://pe-pf-a201.student.central:3128",
+    "http_proxy": "http://pe-pf-a201.student.central:3128",
+    "IDEA_INITIAL_DIRECTORY": "C:\\WINDOWS\\system32",
+    "Is_VDI_Desktop": "0",
+    "JAVA_HOME": "C:\\Program Files\\Android\\Jdk\\microsoft_dist_openjdk_1.8.0.25",
+    "LOCALAPPDATA": "C:\\Users\\5001775\\AppData\\Local",
+    "LOGONSERVER": "\\\\DC02AD0002PRD",
+    "NO_PROXY": "view.northmetrotafe.wa.edu.au,myview.northmetrotafe.wa.edu.au,.student.central",
+    "NUMBER_OF_PROCESSORS": "6",
+    "OneDrive": "C:\\Users\\5001775\\OneDrive - TAFE",
+    "OneDriveCommercial": "C:\\Users\\5001775\\OneDrive - TAFE",
+    "OS": "Windows_NT",
+    "Path": "C:\\Program Files (x86)\\VMware\\VMware Workstation\\bin\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\AdoptOpenJDK\\jdk-15.0.1.9-hotspot\\bin;C:\\Program Files\\Python39\\Scripts\\;C:\\Program Files\\Python39\\;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\Ruby26-x64\\bin;C:\\Program Files\\Python38\\Scripts\\;C:\\Program Files\\Python38\\;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\110\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\120\\DTS\\Binn\\;C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files (x86)\\IncrediBuild;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Git\\cmd;C:\\Users\\5001775\\scoop\\shims;C:\\Users\\5001775\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\5001775\\AppData\\Roaming\\npm",
+    "PATHEXT": ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW;.PY;.PYW",
+    "PROCESSOR_ARCHITECTURE": "AMD64",
+    "PROCESSOR_IDENTIFIER": "Intel64 Family 6 Model 158 Stepping 10, GenuineIntel",
+    "PROCESSOR_LEVEL": "6",
+    "PROCESSOR_REVISION": "9e0a",
+    "ProgramData": "C:\\ProgramData",
+    "ProgramFiles": "C:\\Program Files",
+    "ProgramFiles(x86)": "C:\\Program Files (x86)",
+    "ProgramW6432": "C:\\Program Files",
+    "PSModulePath": "C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\Tools\\PowerShell\\Modules\\",
+    "PUBLIC": "C:\\Users\\Public",
+    "SESSIONNAME": "Console",
+    "SW_SIM_HYDRA": "C:\\Program Files\\Common Files\\SolidWorks Shared\\Simulation Worker Agent\\",
+    "SW_SIM_MPIT": "INTELMPI",
+    "SW_SIM_TEMP": "C:\\ProgramData\\SOLIDWORKS\\SW_net_sim_temp\\",
+    "SystemDrive": "C:",
+    "SystemRoot": "C:\\WINDOWS",
+    "TAILWIND_DISABLE_TOUCH": "true",
+    "TAILWIND_MODE": "build",
+    "TEMP": "C:\\Users\\5001775\\AppData\\Local\\Temp",
+    "TMP": "C:\\Users\\5001775\\AppData\\Local\\Temp",
+    "UATDATA": "C:\\WINDOWS\\CCM\\UATData\\D9F8C395-CAB8-491d-B8AC-179A1FE1BE77",
+    "UNITY_NOPROXY": "localhost,127.0.0.1",
+    "USERDNSDOMAIN": "AD.DOM",
+    "USERDOMAIN": "AD",
+    "USERDOMAIN_ROAMINGPROFILE": "AD",
+    "USERNAME": "5001775",
+    "USERPROFILE": "C:\\Users\\5001775",
+    "VBOX_MSI_INSTALL_PATH": "C:\\Program Files\\Oracle\\VirtualBox\\",
+    "VS140COMNTOOLS": "C:\\Program Files (x86)\\Microsoft Visual Studio 14.0\\Common7\\Tools\\",
+    "windir": "C:\\WINDOWS"
+  },
+  "sharedObjects": [
+    "C:\\Program Files\\nodejs\\node.exe",
+    "C:\\WINDOWS\\SYSTEM32\\ntdll.dll",
+    "C:\\WINDOWS\\System32\\KERNEL32.DLL",
+    "C:\\WINDOWS\\System32\\KERNELBASE.dll",
+    "C:\\WINDOWS\\System32\\ADVAPI32.DLL",
+    "C:\\WINDOWS\\System32\\msvcrt.dll",
+    "C:\\WINDOWS\\System32\\sechost.dll",
+    "C:\\WINDOWS\\System32\\RPCRT4.dll",
+    "C:\\WINDOWS\\System32\\WS2_32.dll",
+    "C:\\WINDOWS\\System32\\USER32.dll",
+    "C:\\WINDOWS\\System32\\win32u.dll",
+    "C:\\WINDOWS\\System32\\GDI32.dll",
+    "C:\\WINDOWS\\System32\\gdi32full.dll",
+    "C:\\WINDOWS\\System32\\msvcp_win.dll",
+    "C:\\WINDOWS\\System32\\ucrtbase.dll",
+    "C:\\WINDOWS\\System32\\PSAPI.DLL",
+    "C:\\WINDOWS\\System32\\CRYPT32.dll",
+    "C:\\WINDOWS\\System32\\MSASN1.dll",
+    "C:\\WINDOWS\\System32\\bcrypt.dll",
+    "C:\\WINDOWS\\SYSTEM32\\dbghelp.dll",
+    "C:\\WINDOWS\\SYSTEM32\\WINMM.dll",
+    "C:\\WINDOWS\\SYSTEM32\\IPHLPAPI.DLL",
+    "C:\\WINDOWS\\SYSTEM32\\WINMMBASE.dll",
+    "C:\\WINDOWS\\System32\\cfgmgr32.dll",
+    "C:\\WINDOWS\\SYSTEM32\\USERENV.dll",
+    "C:\\WINDOWS\\System32\\profapi.dll",
+    "C:\\WINDOWS\\System32\\IMM32.DLL",
+    "C:\\WINDOWS\\System32\\powrprof.dll",
+    "C:\\WINDOWS\\SYSTEM32\\CRYPTBASE.DLL",
+    "C:\\WINDOWS\\System32\\bcryptPrimitives.dll",
+    "C:\\WINDOWS\\system32\\uxtheme.dll",
+    "C:\\WINDOWS\\System32\\combase.dll",
+    "C:\\WINDOWS\\system32\\mswsock.dll",
+    "C:\\WINDOWS\\System32\\kernel.appcore.dll",
+    "C:\\WINDOWS\\System32\\NSI.dll",
+    "C:\\WINDOWS\\SYSTEM32\\dhcpcsvc6.DLL",
+    "C:\\WINDOWS\\SYSTEM32\\dhcpcsvc.DLL",
+    "C:\\WINDOWS\\SYSTEM32\\DNSAPI.dll",
+    "C:\\WINDOWS\\system32\\napinsp.dll",
+    "C:\\WINDOWS\\system32\\pnrpnsp.dll",
+    "C:\\WINDOWS\\System32\\winrnr.dll",
+    "C:\\WINDOWS\\system32\\NLAapi.dll",
+    "C:\\WINDOWS\\system32\\wshbth.dll",
+    "C:\\Program Files\\Bonjour\\mdnsNSP.dll"
+  ]
+}
