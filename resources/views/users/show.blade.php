@@ -43,10 +43,16 @@
                         <dt class="col-span-1">Last Logged In From</dt>
                         <dd class="col-span-5">{{ $user->last_login_ip ?? '-' }}</dd>
                         <dt class="col-span-1">Roles</dt>
-                        <dd class="col-span-5"> @if(!empty($user->getRoleNames()))
-                                @foreach($user->getRoleNames() as $val)
-                                    <span class="rounded bg-warmGray-600 text-warmGray-50 text-sm p-1 py-0 mr-0.5">{{ $val }}</span>
+                        <dd class="col-span-5">
+                            @if(!empty($user->getRoleNames()))
+                                @foreach($user->getRoleNames() as $theRole)
+                                    <span class="ml-2 rounded bg-trueGray-600 text-trueGray-50 text-sm p-2 py-0 mr-0.5">
+                                        <i class="fa fa-check -ml-4 mr-1 bg-green-500 rounded p-1.5 rounded-full"></i>
+                                        {{ $theRole }}
+                                    </span>
                                 @endforeach
+                            @else
+                                <em class="text-red-800">No roles</em>
                             @endif
                         </dd>
                         <dt class="col-span-1">Actions</dt>

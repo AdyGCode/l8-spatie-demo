@@ -14,9 +14,9 @@
 <x-app-layout>
     <x-slot name="header">
         <div class="flex">
-        <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __('Role Details') }}
-        </h2>
+            <h2 class="font-semibold text-xl text-gray-800 leading-tight">
+                {{ __('Role Details') }}
+            </h2>
             <span class="flex-grow"></span>
             <a href="{{ route('roles.create') }}"
                class="rounded p-2 px-4 mr-2 flex-none
@@ -30,7 +30,8 @@
 
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            @if (\Session::has('success'))
+            <em class="text-red-800">TODO: Delete button</em>
+        @if (\Session::has('success'))
                 <div class="alert alert-success">
                     <p>{{ \Session::get('success') }}</p>
                 </div>
@@ -52,10 +53,13 @@
                             @endif
                         </dd>
                         <dt class="col-span-1">Permissions</dt>
-                        <dd class="col-span-5">
+                        <dd class="col-span-5 leading-loose align-middle ml-0">
                             @if(!empty($rolePermissions))
                                 @foreach($rolePermissions as $permission)
-                                    <span class="inline-block rounded bg-warmGray-600 text-warmGray-50 text-sm p-1 py-0 mr-0.5 text-sm">{{ $permission->name }}</span>
+                                    <span class="m-1 ml-3 rounded bg-trueGray-600 text-trueGray-50 text-sm p-2 py-0 mr-0.5 whitespace-nowrap ">
+                                        <i class="fa fa-check -ml-4 mr-1 bg-green-500 rounded p-1.5 rounded-full"></i>
+                                        {{ $permission->name }}
+                                    </span>
                                 @endforeach
                             @endif
                         </dd>
