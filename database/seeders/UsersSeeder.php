@@ -17,7 +17,7 @@ class UsersSeeder extends Seeder
      */
     public function run()
     {
-        $seedAdminUser =
+        $seedAdminUsers =
             [
                 'id' => 1,
                 'name' => 'Ad Ministrator',
@@ -27,12 +27,16 @@ class UsersSeeder extends Seeder
                 'created_at' => now(),
                 'timezone' => 'Australia/Perth',
             ];
-        $user = User::create($seedAdminUser);
+
         // $role = Role::create('Admin'); already added by RolesSeeder
         $role = Role::findByName('admin');
         $permissions = Permission::pluck('id','id')->all();
         $role->syncPermissions($permissions);
-        $user->assignRole($role);
+        
+        foreach ($seedAdminUsers as $seedAdminUser) {
+            $user = User::create($seedAdminUser);
+            $user->assignRole($role);
+        }
 
         $seedManagerUsers = [
             [
