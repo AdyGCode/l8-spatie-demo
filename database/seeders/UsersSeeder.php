@@ -17,7 +17,7 @@ class UsersSeeder extends Seeder
      */
     public function run()
     {
-        $seedAdminUsers =
+        $seedAdminUsers = [
             [
                 'id' => 1,
                 'name' => 'Ad Ministrator',
@@ -26,13 +26,23 @@ class UsersSeeder extends Seeder
                 'password' => Hash::make('Password1'),
                 'created_at' => now(),
                 'timezone' => 'Australia/Perth',
-            ];
+            ],
+            [
+                'id' => 1,
+                'name' => 'Lee Da',
+                'email' => 'ad.ministrator@example.com',
+                'email_verified_at' => now(),
+                'password' => Hash::make('Password1'),
+                'created_at' => now(),
+                'timezone' => 'Australia/Perth',
+            ],
+        ];
 
         // $role = Role::create('Admin'); already added by RolesSeeder
         $role = Role::findByName('admin');
-        $permissions = Permission::pluck('id','id')->all();
+        $permissions = Permission::pluck('id', 'id')->all();
         $role->syncPermissions($permissions);
-        
+
         foreach ($seedAdminUsers as $seedAdminUser) {
             $user = User::create($seedAdminUser);
             $user->assignRole($role);
@@ -60,19 +70,23 @@ class UsersSeeder extends Seeder
         ];
         $role = Role::findByName('manager');
         $managerPermissionList = [
-            'user-list', 'user-create',
+            'user-list',
+            'user-create',
             'role-list',
             'permission-list',
-            'post-list', 'post-create', 'post-edit', 'post-delete',
+            'post-list',
+            'post-create',
+            'post-edit',
+            'post-delete',
         ];
         $permissions = Permission::all()
-            ->whereIn('name',$managerPermissionList)
-            ->pluck('id','id');
+            ->whereIn('name', $managerPermissionList)
+            ->pluck('id', 'id');
         $role->syncPermissions($permissions);
 
         foreach ($seedManagerUsers as $managerUser) {
             $user = User::create($managerUser);
-
+            $user->assignRole($role);
         }
 
         $seedUsers = [
@@ -446,16 +460,13 @@ class UsersSeeder extends Seeder
             'post-list',
         ];
         $permissions = Permission::all()
-            ->whereIn('name',$userPermissionList)
-            ->pluck('id','id');
+            ->whereIn('name', $userPermissionList)
+            ->pluck('id', 'id');
         $role->syncPermissions($permissions);
 
         foreach ($seedUsers as $seed) {
-            User::create($seed);
+            $user = User::create($seed);
             $user->assignRole($role);
         }
-
-
-
     }
 }
