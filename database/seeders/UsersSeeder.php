@@ -54,9 +54,20 @@ class UsersSeeder extends Seeder
                 'timezone' => 'Australia/Perth',
             ],
         ];
+        $role = Role::findByName('manager');
+        $managerPermissionList = [
+            'user-list', 'user-create',
+            'role-list',
+            'permission-list',
+            'post-list', 'post-create', 'post-edit', 'post-delete',
+        ];
+        $permissions = Permission::all()
+            ->whereIn('name',$managerPermissionList)
+            ->pluck('id','id');
+        $role->syncPermissions($permissions);
+
         foreach ($seedManagerUsers as $managerUser) {
             $user = User::create($managerUser);
-
 
         }
 
@@ -424,8 +435,20 @@ class UsersSeeder extends Seeder
                 'timezone' => 'America/Boise',
             ],
         ];
+        $role = Role::findByName('user');
+        $userPermissionList = [
+            'user-list',
+            'role-list',
+            'post-list',
+        ];
+        $permissions = Permission::all()
+            ->whereIn('name',$userPermissionList)
+            ->pluck('id','id');
+        $role->syncPermissions($permissions);
+
         foreach ($seedUsers as $seed) {
             User::create($seed);
+            $user->assignRole($role);
         }
 
 
